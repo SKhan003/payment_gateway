@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Gateway</title>
+  <script src="https://kit.fontawesome.com/d92630495d.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+</head>
+<style>
+  * {
+    font-size: 62, 5%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  body {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #eef3f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main {
+    width: 40rem;
+    height: 27rem;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 15px 11px -6px #cdd4e6;
+    box-shadow: 0px 15px 11px -6px #cdd4e6;
+    display: flex;
+    align-items: flex-start;
+    padding: 3rem;
+    gap: 2rem;
+    border-radius: 0.5rem;
+  }
+
+  .headset {
+    height: 11rem;
+  }
+
+  #cart-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .free-shipping {
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    font-size: 0.65rem;
+    background-color: #191649;
+    border: 0;
+    border-radius: 0.9rem;
+    padding: 0.3rem 0.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    cursor: default;
+  }
+
+  h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 0.65rem;
+    text-decoration: line-through;
+    cursor: default;
+  }
+
+  h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    cursor: default;
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+    cursor: default;
+  }
+
+  .add-to-cart {
+    width: 100%;
+    height: 2.7rem;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    background-color: #4787e9;
+    color: #fff;
+    font-weight: 400;
+    border: 0;
+    border-bottom: 0.3rem solid #1e56ed;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+
+  .add-to-cart:active {
+    border-bottom: 0;
+  }
+
+  .stock {
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 2rem;
+  }
+
+  h3 i {
+    color: #04d58b;
+    margin-right: 0.2rem;
+  }
+
+  #buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .add-to-cart-2,
+  .add-to-wishlist {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 2.7rem;
+    width: 11rem;
+    background-color: #fff;
+    border: 0.1rem solid #d6d5d9;
+    border-radius: 0.2rem;
+    cursor: pointer;
+  }
+
+  .add-to-cart-2 i,
+  .add-to-wishlist i {
+    margin-right: 0.5rem;
+  }
+
+  .add-to-cart-2:hover,
+  .add-to-wishlist:hover {
+    border: 0.1rem solid #a7a7aa;
+  }
+
+  @media (max-width: 700px) {
+    * {
+      font-size: 90%;
+    }
+  }
+
+  @media (max-width: 630px) {
+    * {
+      font-size: 80%;
+    }
+  }
+
+  @media (max-width: 580px) {
+    * {
+      font-size: 70%;
+    }
+  }
+
+  @media (max-width: 495px) {
+    * {
+      font-size: 60%;
+    }
+  }
+
+  @media (max-width: 420px) {
+    * {
+      font-size: 50%;
+    }
+  }
+</style>
+
+<body>
+  <main>
+    <img class="headset" src="https://m.media-amazon.com/images/I/610ub5kytVL._AC_SL1500_.jpg" />
+
+    <div id="cart-text">
+      <button class="free-shipping">Free shipping</button>
+      <h2>Some Random Expensive and Gorgeous Pink Headset</h2>
+      <h3>R$ 1.599,00</h3>
+      <h1>R$ 799,00</h1>
+      <h4>The offer is valid until April 3, or as long as stock lasts!</h4>
+      <button class="add-to-cart">Add to Cart</button>
+      <h3 class="stock">
+        <i class="fa-solid fa-circle"></i> 50+ pcs. in stock.
+      </h3>
+        <div id="buttons">
+          <button class="add-to-cart-2">
+            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+          </button>
+          <button class="add-to-wishlist">
+            <i class="fa-solid fa-heart"></i> Add to wishlist
+          </button>
+    </div>
+    </div>
+  </main>
+  <!-- X-0-X-0 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script>
+    var orderId;
+    $(document).ready(function () {
+      var settings = {
+        "url": "/create/orderId",
+        "method": "POST",
+        "timeout": 0,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "data": JSON.stringify({
+          "amount": "50000"
+        }),
+      };
+
+      //creates new orderId everytime
+      $.ajax(settings).done(function (response) {
+
+        orderId = response.orderId;
+        console.log(orderId);
+        $("button").show();
+      });
+    });
+
+    var options = {
+      "key": "rzp_test_6FjaURD1uH91vg", // Enter the Key ID generated from the Dashboard
+      "amount": "50000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+      "currency": "INR",
+      "name": "Acme Corp",
+      "description": "Test Transaction",
+      "image": "https://example.com/your_logo",
+      "order_id": "order_IluGWxBm9U8zJ8", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+      "handler": function (response) {
+        alert(response.razorpay_payment_id);
+        alert(response.razorpay_order_id);
+        alert(response.razorpay_signature)
+      },
+      "prefill": {
+        "name": "Gaurav Kumar",
+        "email": "gaurav.kumar@example.com",
+        "contact": "9000090000"
+      },
+      "notes": {
+        "address": "Razorpay Corporate Office"
+      },
+      "theme": {
+        "color": "#3399cc"
+      }
+    };
+    var rzp1 = new Razorpay(options);
+    rzp1.on('payment.failed', function (response) {
+      alert(response.error.code);
+      alert(response.error.description);
+      alert(response.error.source);
+      alert(response.error.step);
+      alert(response.error.reason);
+      alert(response.error.metadata.order_id);
+      alert(response.error.metadata.payment_id);
+    });
+    document.getElementById('rzp-button1').onclick = function (e) {
+      rzp1.open();
+      e.preventDefault();
+    }
+  </script>
+</body>
+
+</html>
